@@ -34,16 +34,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CVARC.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="CVARC.Core">
       <HintPath>..\Packages\CVARC.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Infrastructure, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Infrastructure">
       <HintPath>..\Packages\Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="Pudge, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Pudge">
       <HintPath>..\Packages\Pudge.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -53,8 +50,7 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TheBeachBots.General, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="TheBeachBots.General">
       <HintPath>..\Packages\TheBeachBots.General.dll</HintPath>
     </Reference>
   </ItemGroup>
@@ -67,12 +63,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(ProjectDir)bin\debug\CVARC.Core.dll" "$(SolutionDir)Polygon\Cvarc\" /Y
-xcopy "$(ProjectDir)bin\debug\Infrastructure.dll" "$(SolutionDir)Polygon\Cvarc\" /Y
-xcopy "$(ProjectDir)bin\debug\LogRunner.exe" "$(SolutionDir)Polygon\Cvarc\" /Y
-xcopy "$(ProjectDir)bin\debug\LogRunner.exe.config" "$(SolutionDir)Polygon\Cvarc\" /Y
-xcopy "$(ProjectDir)bin\debug\Pudge.dll" "$(SolutionDir)Polygon\Cvarc\" /Y
-</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
